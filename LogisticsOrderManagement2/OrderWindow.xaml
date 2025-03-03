@@ -1,0 +1,47 @@
+﻿<Window x:Class="LogisticsOrderManagement2.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Заказ" Height="470" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Номер заказа:"/>
+            <TextBox x:Name="txtOrderNumber"/>
+
+            <TextBlock Text="ФИО заказчика:"/>
+            <TextBox x:Name="txtCustomerName"/>
+
+            <TextBlock Text="Номер телефона:"/>
+            <TextBox x:Name="txtPhoneNumber"/>
+
+            <TextBlock Text="Дата добавления:"/>
+            <DatePicker x:Name="dpDateAdded"/>
+
+            <TextBlock Text="Тип товара:"/>
+            <TextBox x:Name="txtProductType"/>
+
+            <TextBlock Text="Вес 1 единицы:"/>
+            <TextBox x:Name="txtUnitWeight"/>
+
+            <TextBlock Text="Объём 1 единицы:"/>
+            <TextBox x:Name="txtUnitVolume"/>
+
+            <TextBlock Text="Расстояние (км):"/>
+            <TextBox x:Name="txtDistance"/>
+
+            <TextBlock Text="Количество товара:"/>
+            <TextBox x:Name="txtQuantity"/>
+
+            <TextBlock Text="Статус заказа:"/>
+            <ComboBox x:Name="cmbStatus">
+                <ComboBoxItem Content="В пути"/>
+                <ComboBoxItem Content="На складе"/>
+                <ComboBoxItem Content="Доставлен"/>
+            </ComboBox>
+
+            <TextBlock Text="Стоимость доставки:"/>
+            <TextBlock x:Name="txtDeliveryCost" FontWeight="Bold"/>
+
+            <Button Content="Сохранить" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

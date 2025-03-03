@@ -1,0 +1,10 @@
+﻿<Window x:Class="LogisticsOrderManagement2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Управление заказами" Height="300" Width="550">
+    <Grid>
+        <ListBox x:Name="lstOrders" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="550"/>
+        <Button Content="Добавить заказ" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="120" Click="BtnAddOrder_Click"/>
+        <Button Content="Редактировать заказ" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="140" Click="BtnEditOrder_Click"/>
+    </Grid>
+</Window>
